@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp 4</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: max-content;
+            width: 100vw;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personal Details</h1>
+    <form action="education.html">
+        <label>Name: </label><input type="text" name="name" placeholder="Manan Gandhi" required><br><br>
+        <label>Mother's name: </label><input type="text" name="mother" required><br><br>
+        <label>Father's name: </label><input type="text" name="father"required><br><br>
+        <label>Blood Group: </label><input type="text" name="blood-group" placeholder="B+" required><br><br>
+        <label>Email: </label><input type="email" name="email" placeholder="manan@manangandhi.tech" required><br><br>
+        <label>Phone Number: </label><input type="number" name="phone" placeholder="10 digit number" required><br><br>
+        <label>Date of birth: </label><input type="date" name="dob" required><br><br>
+        <label>Gender: </label><select name="gender">
+            <option value="male" selected>Male</option>
+            <option value="female">Female</option>
+        </select><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

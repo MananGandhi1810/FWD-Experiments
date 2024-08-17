@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp4</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: max-content;
+            width: 100vw;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Educational Details</h1>
+    <form action="login.html">
+        <label>SAP ID: </label><input type="number" name="sap" placeholder="11 digit number" required><br><br>
+        <label>Course: </label><select name="gender" id="gender">
+            <option value="bti" selected>B.Tech Integrated</option>
+            <option value="btech">B.Tech</option>
+            <option value="mbatech">MBATech</option>
+            <option value="mca">MCA</option>
+        </select><br><br>
+        <label>Stream: </label><select name="gender" id="gender">
+            <option value="ce" selected>Computer Engineering</option>
+            <option value="csbs">Computer Science with Business Systems</option>
+            <option value="ai">Artificial Intelligence</option>
+            <option value="ds">Data Science</option>
+            <option value="me">Mechanical Engineering</option>
+            <option value="mxtc">Mechatronics Engineering</option>
+            <option value="extc">Electronics and Telecommunication Engineering</option>
+            <option value="civil">Civil Engineering</option>
+            <option value="mca">MCA</option>
+        </select><br><br>
+        <label>Year: </label><input type="number" name="year" placeholder="1-6" required><br><br>
+        <label>Division: </label><input type="text" name="division" placeholder="D" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
