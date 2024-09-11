@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp4</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: max-content;
+            width: 100vw;
+            flex-direction: column;
+        }
+    </style>
+    <script>
+        function validate() {
+            let email = document.querySelector('input[name="email"]').value;
+            if (!email.includes('@') || !email.includes('.')) {
+                alert("Invalid email");
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Login</h1>
+    <form action="success.html" onsubmit="return validate()">
+        <label>Email: </label><input type="email" name="email" placeholder="manan@manangandhi.tech" required><br><br>
+        <label>Password: </label><input type="password" name="password" required><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
